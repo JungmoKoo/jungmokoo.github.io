@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaEnvelope, FaPhone, FaDownload } from 'react-icons/fa';
+import { FaGithub, FaEnvelope, FaPhone, FaDownload, FaLinkedin, FaHome } from 'react-icons/fa';
 import profileImg from '../assets/jungmokoo.jpg';
 import './AboutPage.css';
 
@@ -27,7 +27,10 @@ const AboutPage = () => {
                             <FaEnvelope /> gooj978@gmail.com
                         </a>
                         <a href="https://jungmokoo.github.io" target="_blank" rel="noopener noreferrer" className="cv-contact-item">
-                            <FaGithub /> jungmokoo.github.io
+                            <FaHome /> jungmokoo.github.io
+                        </a>
+                        <a href="https://www.linkedin.com/in/jungmo-koo/" target="_blank" rel="noopener noreferrer" className="cv-contact-item">
+                            <FaLinkedin /> LinkedIn
                         </a>
                         {/* <div className="cv-contact-item">
               <FaPhone /> +82 10-XXXX-XXXX
