@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-container container">
-                <Link to="/" className="navbar-logo" onClick={() => setIsOpen(false)}>Jungmo.</Link>
+                <Link to="/" className="navbar-logo" onClick={() => setIsOpen(false)}>구정모.</Link>
 
                 <div className={`navbar-menu ${isOpen ? 'active' : ''}`}>
                     <NavLink to="/" className="navbar-link" onClick={() => setIsOpen(false)}>Home</NavLink>
