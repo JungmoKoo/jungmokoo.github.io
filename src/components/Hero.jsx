@@ -11,8 +11,11 @@ const Hero = () => {
                 <div className="hero-content">
                     <p className="hero-greeting">Hello, I'm</p>
                     <h1 className="hero-name">
-                        Jungmo Koo <span className="hero-name-kr">구정모</span>
+                        Jungmo Koo
                     </h1>
+                    <h2 className="hero-role">
+                        구 정 모
+                    </h2>
                     <h2 className="hero-role">
                         AI <span className="separator">+</span> Robotics <span className="separator">+</span> Computer Vision
                     </h2>
