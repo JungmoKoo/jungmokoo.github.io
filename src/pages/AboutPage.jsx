@@ -26,8 +26,8 @@ const AboutPage = () => {
                         <a href="mailto:gooj978@gmail.com" className="cv-contact-item">
                             <FaEnvelope /> gooj978@gmail.com
                         </a>
-                        <a href="https://github.com/JungmoKoo" target="_blank" rel="noopener noreferrer" className="cv-contact-item">
-                            <FaGithub /> github.com/JungmoKoo
+                        <a href="https://jungmokoo.github.io" target="_blank" rel="noopener noreferrer" className="cv-contact-item">
+                            <FaGithub /> jungmokoo.github.io
                         </a>
                         {/* <div className="cv-contact-item">
               <FaPhone /> +82 10-XXXX-XXXX
@@ -53,8 +53,8 @@ const AboutPage = () => {
                         <div className="cv-skill-list">
                             <span className="cv-skill-tag">TensorFlow</span>
                             <span className="cv-skill-tag">PyTorch</span>
-                            <span className="cv-skill-tag">ROS</span>
                             <span className="cv-skill-tag">Caffe</span>
+                            <span className="cv-skill-tag">ROS/ROS2</span>
                         </div>
                     </div>
                 </aside>
@@ -65,9 +65,8 @@ const AboutPage = () => {
                     <section className="cv-section">
                         <h2 className="cv-section-title">Profile</h2>
                         <p className="cv-bio">
-                            I am a researcher specializing in Deep Learning, Computer Vision, and Robotics.
-                            My work focuses on pushing the boundaries of autonomous systems and intelligent perception,
-                            translating complex theoretical models into practical, real-world applications.
+                            I am a engineer specializing in AI, Computer Vision, and Robotics.
+                            My work focuses on pushing the boundaries of autonomous systems and intelligent perception, real-world applications.
                         </p>
                     </section>
 
@@ -96,10 +95,10 @@ const AboutPage = () => {
                     <section className="cv-section">
                         <h2 className="cv-section-title">Research Interests</h2>
                         <ul style={{ listStyle: 'disc', paddingLeft: '20px', color: 'var(--text-secondary)' }}>
-                            <li style={{ marginBottom: '5px' }}>3D Object Detection & Tracking</li>
-                            <li style={{ marginBottom: '5px' }}>Autonomous Navigation in Dynamic Environments</li>
-                            <li style={{ marginBottom: '5px' }}>Deep Reinforcement Learning for Robotics</li>
-                            <li style={{ marginBottom: '5px' }}>Sensor Fusion (LiDAR, Camera, Radar)</li>
+                            <li style={{ marginBottom: '5px' }}>Object Detection & Segmentation</li>
+                            <li style={{ marginBottom: '5px' }}>Depth Estimation</li>
+                            <li style={{ marginBottom: '5px' }}>Real-time Efficient Neural Network Modeling</li>
+                            <li style={{ marginBottom: '5px' }}>Real-world applications</li>
                         </ul>
                     </section>
 
@@ -114,7 +113,7 @@ const AboutPage = () => {
                             </div>
                             <div className="cv-item-subtitle">Ph.D. - ABD(수료) / Adviser: Prof. Hyun Myung</div>
                             <p className="cv-item-desc">
-                                Research focus on Deep Learning, Computer Vision, and Robotics.
+                                Research focus on Real-time AI in Robotics.
                             </p>
                         </div>
 
@@ -125,7 +124,7 @@ const AboutPage = () => {
                             </div>
                             <div className="cv-item-subtitle">M.S. - Adviser: Prof. Hyun Myung</div>
                             <p className="cv-item-desc">
-                                Specialized in Robotics and Control systems.
+                                Specialized AI Perception in Ocean Environment.
                             </p>
                         </div>
 

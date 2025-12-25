@@ -10,7 +10,7 @@ const About = () => {
                 <div className="about-content">
                     <div className="about-card">
                         <p className="about-text">
-                            I am a researcher specializing in Deep Learning, Computer Vision, and Robotics.
+                            I am a researcher specializing in AI, Computer Vision, and Robotics.
                             My work focuses on pushing the boundaries of autonomous systems and intelligent perception.
                         </p>
                         <div className="contact-links">
