@@ -1,0 +1,113 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* Background is now handled by Background3D, but we keep this as fallback or overlay container */
+    background: transparent;
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 800px;
+}
+
+.hero-greeting {
+    font-size: 1.5rem;
+    color: var(--primary-accent);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+}
+
+.hero-name {
+    font-size: 5rem;
+    margin-bottom: var(--spacing-sm);
+    background: var(--hero-title-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-role {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-xl);
+    font-weight: 400;
+}
+
+.separator {
+    color: var(--primary-accent);
+    margin: 0 10px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--primary-accent);
+    color: #000;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.6);
+}
+
+.btn-secondary {
+    border: 1px solid var(--text-secondary);
+    color: var(--text-secondary);
+    background: transparent;
+}
+
+.btn-secondary:hover {
+    border-color: var(--text-primary);
+    color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+    .hero-name {
+        font-size: 3.5rem;
+    }
+
+    .hero-role {
+        font-size: 1.2rem;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+}
+
+.hero-name-kr {
+    font-size: 0.5em;
+    /* Smaller size as requested */
+    margin-left: 15px;
+    font-weight: 500;
+    /* Increased weight for visibility */
+    opacity: 1;
+    /* Removed opacity */
+    font-family: 'Sunflower', sans-serif;
+    vertical-align: middle;
+    background: none;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: var(--text-primary);
+    color: var(--text-primary);
+}

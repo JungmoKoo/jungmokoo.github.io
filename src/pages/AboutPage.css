@@ -1,0 +1,422 @@
+.about-page {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    background: var(--bg-color);
+}
+
+.cv-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: var(--surface-color);
+    border-radius: 8px;
+    /* Slight radius, simpler */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    /* Sidebar width fixed */
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Sidebar */
+.cv-sidebar {
+    background: rgba(0, 0, 0, 0.2);
+    /* Slightly darker than surface */
+    padding: 40px 30px;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cv-profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid var(--primary-accent);
+}
+
+.cv-name {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.cv-role {
+    font-size: 1rem;
+    color: var(--primary-accent);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.cv-contact-list {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.cv-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.cv-contact-item:hover {
+    color: var(--primary-accent);
+}
+
+.cv-skills-section {
+    text-align: left;
+}
+
+.cv-skill-category {
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--secondary-accent);
+    padding-bottom: 5px;
+}
+
+.cv-skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.cv-skill-tag {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Main Content */
+.cv-main {
+    padding: 40px;
+}
+
+.cv-section {
+    margin-bottom: 40px;
+}
+
+.cv-section-title {
+    font-size: 1.5rem;
+    color: var(--primary-accent);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cv-bio {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.cv-item {
+    margin-bottom: 20px;
+}
+
+.cv-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.cv-item-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.cv-item-date {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.cv-item-subtitle {
+    font-size: 1rem;
+    color: var(--secondary-accent);
+    margin-bottom: 8px;
+}
+
+.cv-item-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cv-container {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .cv-sidebar {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+}
+
+.download-cv-btn {
+    padding: 10px 20px;
+    background: var(--primary-accent);
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-family: var(--font-body);
+}
+
+.download-cv-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+}
+
+/* Print Styles */
+@media print {
+    @page {
+        margin: 0;
+        size: A4;
+    }
+
+    html,
+    body {
+        height: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #fff !important;
+        color: #000 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .navbar,
+    .theme-toggle,
+    .download-cv-btn,
+    .cv-controls {
+        display: none !important;
+    }
+
+    .about-page {
+        padding: 0 !important;
+        margin: 0 !important;
+        background: #fff !important;
+        min-height: 100% !important;
+        height: 100% !important;
+        display: block !important;
+    }
+
+    .cv-container {
+        box-shadow: none !important;
+        border: none !important;
+        max-width: 210mm !important;
+        /* A4 Width */
+        width: 210mm !important;
+        min-height: 295mm !important;
+        /* Approx A4 Height */
+        margin: 0 auto !important;
+        padding: 0 !important;
+        grid-template-columns: 28% 72% !important;
+        overflow: hidden !important;
+        display: grid !important;
+        background: #fff !important;
+        /* Force white background */
+    }
+
+    .cv-sidebar {
+        background: #f4f4f4 !important;
+        color: #000 !important;
+        padding: 20px 15px !important;
+        /* Reduced padding */
+        height: 100%;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .cv-main {
+        padding: 25px 30px !important;
+        /* Reduced padding */
+    }
+
+    .cv-profile-img {
+        width: 120px !important;
+        /* Smaller image */
+        height: 120px !important;
+        border-width: 2px !important;
+        border-color: #333 !important;
+        margin-bottom: 15px !important;
+    }
+
+    .cv-name {
+        font-size: 1.4rem !important;
+        /* Smaller name */
+        color: #000 !important;
+        line-height: 1.2 !important;
+        margin-bottom: 2px !important;
+    }
+
+    .cv-name span {
+        color: #333 !important;
+        font-size: 0.5em !important;
+    }
+
+    .cv-role {
+        font-size: 0.9rem !important;
+        color: #0056b3 !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Compact Sidebar Items */
+    .cv-contact-list {
+        margin-bottom: 25px !important;
+    }
+
+    .cv-contact-item {
+        margin-bottom: 8px !important;
+        font-size: 0.8rem !important;
+        color: #333 !important;
+    }
+
+    .cv-skills-section {
+        margin-top: 0 !important;
+    }
+
+    .cv-skill-category {
+        font-size: 0.85rem !important;
+        margin-top: 15px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .cv-skill-tag {
+        font-size: 0.75rem !important;
+        padding: 2px 6px !important;
+        border: 1px solid #ddd !important;
+        background: none !important;
+        color: #333 !important;
+    }
+
+    /* Compact Main Content */
+    .cv-section {
+        margin-bottom: 25px !important;
+        /* Reduced section margin */
+    }
+
+    .cv-section-title {
+        font-size: 1.2rem !important;
+        color: #0056b3 !important;
+        border-bottom: 1px solid #0056b3 !important;
+        padding-bottom: 5px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .cv-bio {
+        font-size: 0.9rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 15px !important;
+        color: #333 !important;
+        text-align: justify !important;
+    }
+
+    .cv-item {
+        margin-bottom: 15px !important;
+    }
+
+    .cv-item-header {
+        margin-bottom: 2px !important;
+    }
+
+    .cv-item-title {
+        font-size: 1rem !important;
+        color: #000 !important;
+    }
+
+    .cv-item-date {
+        font-size: 0.8rem !important;
+        color: #555 !important;
+    }
+
+    .cv-item-subtitle {
+        font-size: 0.9rem !important;
+        margin-bottom: 4px !important;
+        color: #444 !important;
+    }
+
+    .cv-item-desc {
+        font-size: 0.85rem !important;
+        line-height: 1.4 !important;
+        color: #333 !important;
+    }
+
+    /* Research Interests List Compact */
+    .cv-section ul li {
+        margin-bottom: 2px !important;
+        font-size: 0.9rem !important;
+        color: #333 !important;
+    }
+
+    /* Force all text to be dark in print, overriding any theme variables */
+    * {
+        color: #000 !important;
+        border-color: #ccc !important;
+        /* Force borders to be visible but subtle */
+    }
+
+    /* Exceptions for specific colors if needed (re-asserting them to ensure they aren't black) */
+    .cv-role,
+    .cv-section-title {
+        color: #0056b3 !important;
+        border-color: #0056b3 !important;
+    }
+
+    .cv-item-date {
+        color: #666 !important;
+    }
+
+    .cv-item-subtitle {
+        color: #444 !important;
+    }
+
+    .cv-bio,
+    .cv-item-desc,
+    .cv-contact-item,
+    .cv-skill-tag {
+        color: #333 !important;
+    }
+
+    .cv-skill-tag {
+        border-color: #999 !important;
+    }
+
+    /* Ensure sidebar text contrast */
+    .cv-sidebar * {
+        color: #000 !important;
+    }
+
+    .cv-contact-item {
+        color: #333 !important;
+    }
+}
