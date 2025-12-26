@@ -136,7 +136,7 @@ const AboutPage = () => {
                                 <span className="cv-item-title">Kyung Hee University</span>
                                 <span className="cv-item-date">2009 - 2015</span>
                             </div>
-                            <div className="cv-item-subtitle">B.S. in Mechanical Engineering</div>
+                            <div className="cv-item-subtitle">B.S. in Electronic Engineering</div>
                         </div>
                     </section>
 
