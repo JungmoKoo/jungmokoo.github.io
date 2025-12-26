@@ -6,16 +6,24 @@
     position: relative;
     /* Background is now handled by Background3D, but we keep this as fallback or overlay container */
     background: transparent;
+    pointer-events: none;
+}
+
+.hero-container {
+    pointer-events: none;
 }
 
 .hero-content {
     text-align: left;
     max-width: 800px;
+    pointer-events: auto;
+    position: relative;
+    z-index: 10;
 }
 
 .hero-greeting {
     font-size: 1.5rem;
-    color: var(--primary-accent);
+    color: #00d4ff;
     margin-bottom: var(--spacing-sm);
     font-weight: 600;
 }
@@ -23,14 +31,14 @@
 .hero-name {
     font-size: 5rem;
     margin-bottom: var(--spacing-sm);
-    background: var(--hero-title-gradient);
+    background: linear-gradient(90deg, #ffffff, #e0e0e0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .hero-role {
     font-size: 1.5rem;
-    color: var(--text-secondary);
+    color: #cccccc;
     margin-bottom: var(--spacing-xl);
     font-weight: 400;
 }
@@ -108,6 +116,6 @@
     vertical-align: middle;
     background: none;
     -webkit-background-clip: border-box;
-    -webkit-text-fill-color: var(--text-primary);
-    color: var(--text-primary);
+    -webkit-text-fill-color: #ffffff;
+    color: #ffffff;
 }
