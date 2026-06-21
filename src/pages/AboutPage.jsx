@@ -79,8 +79,16 @@ const AboutPage = () => {
 
                         <div className="cv-item">
                             <div className="cv-item-header">
+                                <span className="cv-item-title">Seadronix</span>
+                                <span className="cv-item-date">2026 - Present</span>
+                            </div>
+                            <div className="cv-item-subtitle">Leader / Physical AI</div>
+                        </div>
+
+                        <div className="cv-item">
+                            <div className="cv-item-header">
                                 <span className="cv-item-title">NAVER LABS</span>
-                                <span className="cv-item-date">2022 - Present</span>
+                                <span className="cv-item-date">2022 - 2026</span>
                             </div>
                             <div className="cv-item-subtitle">Researcher / Robot Vision</div>
                         </div>
